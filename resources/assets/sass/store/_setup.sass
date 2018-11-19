@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,400i,700')
+
+$font1: 'Lato', sans-serif
+$font2: 'Playfair Display', serif
+
+.font-1
+	font-family: $font1
+.font-2
+	font-family: $font2
+$fa-icon: "Font Awesome 5 Free"
+
+//////////////////////////////////////
+//                                  //
+//              COLORS              //
+//                                  //
+//////////////////////////////////////
+	
+
+$orange:     #dc9f1d
+$orangeH:    #ceaa5f
+$greenD:     #8DBB61
+$greenL:     #9FD56B
+$green:      #ddecdf
+$greenH:     #9FD56B
+$blue:       #5D76C9
+$blueH:      #7689C8
+$lblue:      #92c6de
+$red:        #D05C5C
+$redH:       #C47777
+
+
+$grey: #8e8e8e
+$main-color: #D12F59
+
+//////////////////////////////////////
+//                                  //
+//           BACKGROUNDS            //
+//                                  //
+//////////////////////////////////////
+
+.blue-back
+	background-color: $blue
+
+.green-back
+	background-color: $green
+
+.red-back
+	background-color: $red
+
+.grey-back
+	background-color: #f3f3f3
+
+.yellow-back
+	background-color: #08dc2e
+
+.hollow-back-white
+	border: 1px solid white
+	background-color: transparent
+
+.hollow-back-lblue
+	border: 1px solid $lblue
+	background-color: transparent
+	color: #383838
+
+.color-grey
+	color: #cccccc
+.color-green
+	color: green
+
+html, body
+	height: 100%
+	// min-height: 100vh !important
+
+.content
+	min-height: 100%
+	padding: 0
+	&:first:child
+		padding-bottom: 100px
+
+	
+footer
+	position: relative
+
+a
+	text-decoration: none
+
+//////////////////////////////////////
+//                                  //
+//           HELPERS                //
+//                                  //
+//////////////////////////////////////
+
+.relative
+	position: relative
+.absolute-bottom
+	position: absolute
+	bottom: 5px
+.Hidden
+	display: none !important
+.brd
+  	border: 1px solid red
+.txtL
+  	text-align: left
+.txtR
+  	text-align: right
+.txtC
+ 	 text-align: center
+.mw-100
+	max-width: 100px
+.mw-150
+	max-width: 150px
+.mw-200
+	max-width: 200px
+.pad0
+  	padding: 0
+.dont-break
+	white-space: nowrap
+.dont-wrap
+	display: flex
+	flex-wrap: nowrap
+	
+.marg-top-25
+	margin-top: 25px
+.pad0
+	padding: 0
+.cursor-pointer
+	&:hover
+		cursor: pointer
+.anchor
+	display: block
+	position: relative
+	top: -50px
+	visibility: hidden
+
+.horizontal-list
+	ul
+		padding-left: 0
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			list-style: none
+
+.flex-h-100
+	display: flex
+	.flex-h-inner
+		width: 100%
+
+.top-right-element
+	position: absolute
+	right: 10px
+	top: 10px

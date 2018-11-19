@@ -1,0 +1,96 @@
+.navbar-sticky
+	.toolbar
+		.inner
+			.tools
+				.account
+					img
+						border-radius: 50%
+
+
+	
+.dropdown-product-item > .dropdown-product-info
+	max-width: 148px
+	width: 148px
+	padding-left: 0
+.dropdown-product-item > .dropdown-product-custom-thumb > img
+	border-radius: 0
+	max-width: 100%
+	max-height: 80px
+
+
+@media (min-width: 481px)
+	.toolbar .cart > .toolbar-dropdown
+		width: 300px
+		padding-left: 18px !important
+		max-height: 400px
+		overflow-y: scroll
+		overflow-x: hidden
+
+@media (max-width: 481px)
+	.toolbar-user-dropdown
+		position: fixed
+		top: 150px
+		left: 10px !important
+
+.navbar-sticky	
+	.toolbar 
+		white-space: nowrap
+		.inner 
+			@include flex-center
+			margin-bottom: 10px
+			.tools
+				height: auto
+				display: inline-flex
+		
+.user-info-wrapper
+	padding-top: 20px
+	padding-bottom: 20px
+	.user-info .user-data
+		padding-top: 26px
+
+@media (max-width: 660px)
+	.checkout-steps
+		display: none
+
+.top-info
+	padding-bottom: 20px
+
+@media (max-width: 1070px)
+	.toolbar 
+		.tools
+			display: table-cell
+			vertical-align: middle
+			.account
+				display: block
+
+@media (max-width: 600px)
+	.toolbar
+		position: absolute
+
+.navbar
+	.site-logo-mobile
+		display: none
+
+@media (max-width: 481px)
+	.navbar
+		min-height: auto
+		.site-branding
+			display: none
+		.site-logo-mobile
+			display: block
+			margin-right: 10px
+		.toolbar .inner
+			padding: 5px
+			margin-bottom: 0
+	.toolbar .cart > .toolbar-dropdown
+		top: 100px
+
+
+// ------- Top Bar ---------
+.topbar .topbar-column
+	white-space: nowrap
+	
+@media (max-width: 490px)
+	.topbar .topbar-column
+		.e-mail-field
+			display: none !important
